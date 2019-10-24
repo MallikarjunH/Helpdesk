@@ -18,6 +18,7 @@
 		060BA89C236072A600349709 /* helpdeskLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 060BA89B236072A600349709 /* helpdeskLogo.png */; };
 		060BA89E236074FB00349709 /* main_helpdesk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 060BA89D236074FB00349709 /* main_helpdesk.jpg */; };
 		06DB84552361B85B00271D1D /* MyWebservices.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DB84542361B85B00271D1D /* MyWebservices.m */; };
+		06DB84582361BA0A00271D1D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DB84572361BA0A00271D1D /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		06DB84512361A8A900271D1D /* AppConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
 		06DB84532361B85B00271D1D /* MyWebservices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWebservices.h; sourceTree = "<group>"; };
 		06DB84542361B85B00271D1D /* MyWebservices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWebservices.m; sourceTree = "<group>"; };
+		06DB84562361BA0A00271D1D /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		06DB84572361BA0A00271D1D /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 		060BA89423606F1A00349709 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				06DB84562361BA0A00271D1D /* Reachability.h */,
+				06DB84572361BA0A00271D1D /* Reachability.m */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 				060BA87E23606E1500349709 /* ViewController.m in Sources */,
 				060BA87823606E1500349709 /* AppDelegate.m in Sources */,
 				060BA88923606E3200349709 /* main.m in Sources */,
+				06DB84582361BA0A00271D1D /* Reachability.m in Sources */,
 				060BA87B23606E1500349709 /* SceneDelegate.m in Sources */,
 				06DB84552361B85B00271D1D /* MyWebservices.m in Sources */,
 				060BA89A23606FDE00349709 /* LoginViewController.m in Sources */,
