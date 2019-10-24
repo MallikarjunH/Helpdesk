@@ -16,6 +16,7 @@
 		060BA88923606E3200349709 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 060BA88823606E3200349709 /* main.m */; };
 		060BA89A23606FDE00349709 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 060BA89923606FDE00349709 /* LoginViewController.m */; };
 		060BA89C236072A600349709 /* helpdeskLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 060BA89B236072A600349709 /* helpdeskLogo.png */; };
+		060BA89E236074FB00349709 /* main_helpdesk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 060BA89D236074FB00349709 /* main_helpdesk.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		060BA89823606FDE00349709 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		060BA89923606FDE00349709 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		060BA89B236072A600349709 /* helpdeskLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helpdeskLogo.png; sourceTree = "<group>"; };
+		060BA89D236074FB00349709 /* main_helpdesk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = main_helpdesk.jpg; sourceTree = "<group>"; };
+		06DB84512361A8A900271D1D /* AppConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 		060BA88F23606ECC00349709 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				06DB84512361A8A900271D1D /* AppConstant.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				060BA89B236072A600349709 /* helpdeskLogo.png */,
+				060BA89D236074FB00349709 /* main_helpdesk.jpg */,
 				060BA88223606E3200349709 /* Assets.xcassets */,
 			);
 			path = Images;
@@ -215,6 +220,7 @@
 			files = (
 				060BA89C236072A600349709 /* helpdeskLogo.png in Resources */,
 				060BA88623606E3200349709 /* LaunchScreen.storyboard in Resources */,
+				060BA89E236074FB00349709 /* main_helpdesk.jpg in Resources */,
 				060BA88323606E3200349709 /* Assets.xcassets in Resources */,
 				060BA88123606E1500349709 /* Main.storyboard in Resources */,
 			);
