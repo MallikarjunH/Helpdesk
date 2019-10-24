@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 
+
 @interface LoginViewController ()
 
 @end
@@ -22,5 +23,16 @@
 
 
 - (IBAction)loginButtonClicked:(id)sender {
+    
+    if ([_userNameTextField.text isEqualToString:@""] || [_passwordTextField.text isEqualToString:@""]){
+        
+       //show alert
+        
+    }else{
+        
+        NSString *url = [NSString stringWithFormat:@"https://www.stablehelpdesk.faveodemo.com/api/v1/authenticate"];
+        
+        
+    }
 }
 @end

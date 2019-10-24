@@ -17,6 +17,7 @@
 		060BA89A23606FDE00349709 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 060BA89923606FDE00349709 /* LoginViewController.m */; };
 		060BA89C236072A600349709 /* helpdeskLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 060BA89B236072A600349709 /* helpdeskLogo.png */; };
 		060BA89E236074FB00349709 /* main_helpdesk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 060BA89D236074FB00349709 /* main_helpdesk.jpg */; };
+		06DB84552361B85B00271D1D /* MyWebservices.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DB84542361B85B00271D1D /* MyWebservices.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		060BA89B236072A600349709 /* helpdeskLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helpdeskLogo.png; sourceTree = "<group>"; };
 		060BA89D236074FB00349709 /* main_helpdesk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = main_helpdesk.jpg; sourceTree = "<group>"; };
 		06DB84512361A8A900271D1D /* AppConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
+		06DB84532361B85B00271D1D /* MyWebservices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWebservices.h; sourceTree = "<group>"; };
+		06DB84542361B85B00271D1D /* MyWebservices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWebservices.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,7 @@
 				060BA88F23606ECC00349709 /* Model */,
 				060BA89023606EDC00349709 /* Views */,
 				060BA89123606EE400349709 /* Controllers */,
+				06DB84522361B81F00271D1D /* WebServices */,
 				060BA89323606F0900349709 /* Resources */,
 				060BA89423606F1A00349709 /* Library */,
 				060BA87C23606E1500349709 /* ViewController.h */,
@@ -161,6 +165,15 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		06DB84522361B81F00271D1D /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				06DB84532361B85B00271D1D /* MyWebservices.h */,
+				06DB84542361B85B00271D1D /* MyWebservices.m */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,6 +250,7 @@
 				060BA87823606E1500349709 /* AppDelegate.m in Sources */,
 				060BA88923606E3200349709 /* main.m in Sources */,
 				060BA87B23606E1500349709 /* SceneDelegate.m in Sources */,
+				06DB84552361B85B00271D1D /* MyWebservices.m in Sources */,
 				060BA89A23606FDE00349709 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

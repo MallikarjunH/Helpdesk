@@ -9,6 +9,7 @@
 #ifndef AppConstant_h
 #define AppConstant_h
 
-#define HELPDESK_URL @"1.9.4"
+#define HELPDESK_URL @"https://www.stablehelpdesk.faveodemo.com"
+
 
 #endif /* AppConstant_h */
