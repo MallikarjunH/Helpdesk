@@ -1,0 +1,20 @@
+PODS:
+  - IQKeyboardManager (6.5.0)
+  - NSDate-Time-Ago (1.0.1)
+
+DEPENDENCIES:
+  - IQKeyboardManager
+  - NSDate-Time-Ago
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManager
+    - NSDate-Time-Ago
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 700e5155d6a292383b54e8678aec769e14fc78fc
+  NSDate-Time-Ago: e9de167d0659ebe465c273e833e7b582f061fc41
+
+PODFILE CHECKSUM: 349473ddfef35477bd4499734c541e5c671daa7b
+
+COCOAPODS: 1.8.4

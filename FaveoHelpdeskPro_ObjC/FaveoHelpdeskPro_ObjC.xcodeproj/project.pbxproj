@@ -19,6 +19,8 @@
 		060BA89E236074FB00349709 /* main_helpdesk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 060BA89D236074FB00349709 /* main_helpdesk.jpg */; };
 		06DB84552361B85B00271D1D /* MyWebservices.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DB84542361B85B00271D1D /* MyWebservices.m */; };
 		06DB84582361BA0A00271D1D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DB84572361BA0A00271D1D /* Reachability.m */; };
+		06DB845C2361BAFF00271D1D /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DB845B2361BAFF00271D1D /* Utils.m */; };
+		86899A13D52ACE547972C07C /* libPods-FaveoHelpdeskPro_ObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B79923CF8D96B4D63A22779E /* libPods-FaveoHelpdeskPro_ObjC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,11 @@
 		06DB84542361B85B00271D1D /* MyWebservices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWebservices.m; sourceTree = "<group>"; };
 		06DB84562361BA0A00271D1D /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		06DB84572361BA0A00271D1D /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		06DB845A2361BAFF00271D1D /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		06DB845B2361BAFF00271D1D /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		41FC16BB3BBE926C1165E54B /* Pods-FaveoHelpdeskPro_ObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaveoHelpdeskPro_ObjC.debug.xcconfig"; path = "Target Support Files/Pods-FaveoHelpdeskPro_ObjC/Pods-FaveoHelpdeskPro_ObjC.debug.xcconfig"; sourceTree = "<group>"; };
+		72918FCFA6BF6968454C8066 /* Pods-FaveoHelpdeskPro_ObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaveoHelpdeskPro_ObjC.release.xcconfig"; path = "Target Support Files/Pods-FaveoHelpdeskPro_ObjC/Pods-FaveoHelpdeskPro_ObjC.release.xcconfig"; sourceTree = "<group>"; };
+		B79923CF8D96B4D63A22779E /* libPods-FaveoHelpdeskPro_ObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FaveoHelpdeskPro_ObjC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86899A13D52ACE547972C07C /* libPods-FaveoHelpdeskPro_ObjC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +69,8 @@
 			children = (
 				060BA87523606E1500349709 /* FaveoHelpdeskPro_ObjC */,
 				060BA87423606E1500349709 /* Products */,
+				4752FA830BAC91EA7C087295 /* Pods */,
+				38764F4706B082C79310291C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +91,7 @@
 				060BA89123606EE400349709 /* Controllers */,
 				06DB84522361B81F00271D1D /* WebServices */,
 				060BA89323606F0900349709 /* Resources */,
+				06DB84592361BABC00271D1D /* HelperClasses */,
 				060BA89423606F1A00349709 /* Library */,
 				060BA87C23606E1500349709 /* ViewController.h */,
 				060BA87D23606E1500349709 /* ViewController.m */,
@@ -179,6 +190,33 @@
 			path = WebServices;
 			sourceTree = "<group>";
 		};
+		06DB84592361BABC00271D1D /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				06DB845A2361BAFF00271D1D /* Utils.h */,
+				06DB845B2361BAFF00271D1D /* Utils.m */,
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		38764F4706B082C79310291C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B79923CF8D96B4D63A22779E /* libPods-FaveoHelpdeskPro_ObjC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4752FA830BAC91EA7C087295 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41FC16BB3BBE926C1165E54B /* Pods-FaveoHelpdeskPro_ObjC.debug.xcconfig */,
+				72918FCFA6BF6968454C8066 /* Pods-FaveoHelpdeskPro_ObjC.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 060BA88C23606E3200349709 /* Build configuration list for PBXNativeTarget "FaveoHelpdeskPro_ObjC" */;
 			buildPhases = (
+				1F93DE9D02A08817887C7D38 /* [CP] Check Pods Manifest.lock */,
 				060BA86F23606E1500349709 /* Sources */,
 				060BA87023606E1500349709 /* Frameworks */,
 				060BA87123606E1500349709 /* Resources */,
+				54642B6636542DCD03A8422D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,6 +286,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F93DE9D02A08817887C7D38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaveoHelpdeskPro_ObjC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54642B6636542DCD03A8422D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaveoHelpdeskPro_ObjC/Pods-FaveoHelpdeskPro_ObjC-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaveoHelpdeskPro_ObjC/Pods-FaveoHelpdeskPro_ObjC-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FaveoHelpdeskPro_ObjC/Pods-FaveoHelpdeskPro_ObjC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		060BA86F23606E1500349709 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -254,6 +336,7 @@
 				060BA87E23606E1500349709 /* ViewController.m in Sources */,
 				060BA87823606E1500349709 /* AppDelegate.m in Sources */,
 				060BA88923606E3200349709 /* main.m in Sources */,
+				06DB845C2361BAFF00271D1D /* Utils.m in Sources */,
 				06DB84582361BA0A00271D1D /* Reachability.m in Sources */,
 				060BA87B23606E1500349709 /* SceneDelegate.m in Sources */,
 				06DB84552361B85B00271D1D /* MyWebservices.m in Sources */,
@@ -395,6 +478,7 @@
 		};
 		060BA88D23606E3200349709 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41FC16BB3BBE926C1165E54B /* Pods-FaveoHelpdeskPro_ObjC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -412,6 +496,7 @@
 		};
 		060BA88E23606E3200349709 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72918FCFA6BF6968454C8066 /* Pods-FaveoHelpdeskPro_ObjC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

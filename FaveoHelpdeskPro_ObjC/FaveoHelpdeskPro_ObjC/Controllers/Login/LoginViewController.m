@@ -9,7 +9,7 @@
 #import "LoginViewController.h"
 
 
-@interface LoginViewController ()
+@interface LoginViewController () <UITextFieldDelegate>
 
 @end
 
@@ -25,6 +25,7 @@
 - (IBAction)loginButtonClicked:(id)sender {
     
     if ([_userNameTextField.text isEqualToString:@""] || [_passwordTextField.text isEqualToString:@""]){
+        // OR - if (self.urlTextfield.text.length==0){
         
        //show alert
         
@@ -34,5 +35,14 @@
         
         
     }
+}
+
+//MARK: TextField Delegate methods
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    [textField resignFirstResponder];
+    
+    return true;
 }
 @end
