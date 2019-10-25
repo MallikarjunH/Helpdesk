@@ -7,10 +7,15 @@
 //
 
 #import "LoginViewController.h"
-
+#import "Utils.h"
+#import "Reachability.h"
+#import "MyWebservices.h"
 
 @interface LoginViewController () <UITextFieldDelegate>
-
+{
+    Utils *utils;
+    NSUserDefaults *userdefaults;
+}
 @end
 
 
@@ -27,11 +32,24 @@
     if ([_userNameTextField.text isEqualToString:@""] || [_passwordTextField.text isEqualToString:@""]){
         // OR - if (self.urlTextfield.text.length==0){
         
-       //show alert
+        [utils showAlertWithMessage:@"Please enter username or password" sendViewController:self];
         
     }else{
-        
-        NSString *url = [NSString stringWithFormat:@"https://www.stablehelpdesk.faveodemo.com/api/v1/authenticate"];
+        if([[Reachability reachabilityForInternetConnection]currentReachabilityStatus] == NotReachable){
+            
+        }else{
+            NSString *url = [NSString stringWithFormat:@"https://www.stablehelpdesk.faveodemo.com/api/v1/authenticate?username=%@&password=%@",_userNameTextField.text, _passwordTextField.text];
+            
+            MyWebservices *webservices=[MyWebservices sharedInstance];
+            
+            [webservices httpResponsePOST:url parameter:@"" callbackHandler:^(NSError *error,id json,NSString* msg) {
+                
+               NSLog(@"Message is-%@",msg);
+               NSLog(@"JSON is-%@",json);
+                
+            }];
+            
+        }
         
         
     }
