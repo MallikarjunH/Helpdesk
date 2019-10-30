@@ -37,7 +37,7 @@
     return sharedInstance;
 }
 
-/* -(NSString*)refreshToken{
+ -(NSString*)refreshToken{
     NSLog(@"Thread--refreshToken()");
     
     dispatch_semaphore_t sem;
@@ -45,11 +45,13 @@
     sem = dispatch_semaphore_create(0);
     
     _userDefaults=[NSUserDefaults standardUserDefaults];
-     globalVariables=[GlobalVariables sharedInstance];
+    // globalVariables=[GlobalVariables sharedInstance];
     
-    NSString *url=[NSString stringWithFormat:@"%@authenticate",[_userDefaults objectForKey:@"companyURL"]];
+    //NSString *url=[NSString stringWithFormat:@"%@authenticate",[_userDefaults objectForKey:@"companyURL"]];
     
-    NSDictionary *param=[NSDictionary dictionaryWithObjectsAndKeys:[_userDefaults objectForKey:@"username"],@"username",[_userDefaults objectForKey:@"password"],@"password",API_KEY,@"api_key",IP,@"ip",nil];
+     NSString *url = @"https://www.stablehelpdesk.faveodemo.com/api/v1/authenticate";
+     
+    NSDictionary *param=[NSDictionary dictionaryWithObjectsAndKeys:@"demo_admin",@"username",@"demopass",@"password",nil];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setURL:[NSURL URLWithString:url]];
@@ -150,13 +152,13 @@
                         NSString *role123=[NSString stringWithFormat:@"%@",[userDetailsDict objectForKey:@"role"]];//role
                         NSLog(@"Role from Web Services class : %@",role123);
                         
-                        self->globalVariables.roleFromAuthenticateAPI=role123;
+                        //self->globalVariables.roleFromAuthenticateAPI=role123;
                         [self->_userDefaults setObject:role123 forKey:@"msgFromRefreshToken"];
                         
                         [self->_userDefaults setObject:userId forKey:@"user_id"];
                         
                         [self->_userDefaults synchronize];
-                        self->globalVariables=[GlobalVariables sharedInstance];
+                        //self->globalVariables=[GlobalVariables sharedInstance];
                         
                         result=@"tokenRefreshed";
                         NSLog(@"Thread--refreshToken-tokenRefreshed");
@@ -173,7 +175,7 @@
     
     return result;
 }
-*/
+
 
 
 -(void)callPATCHAPIWithAPIName:(NSString *)urlString
