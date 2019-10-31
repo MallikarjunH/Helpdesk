@@ -64,9 +64,6 @@
 				069FA1D9236B05E10057BAD1 /* Resources */,
 				069FA1DA236B05F80057BAD1 /* Libraries */,
 				069FA1C6236B04B50057BAD1 /* ViewController.swift */,
-				069FA1C8236B04B50057BAD1 /* Main.storyboard */,
-				069FA1CB236B04E10057BAD1 /* Assets.xcassets */,
-				069FA1CD236B04E10057BAD1 /* LaunchScreen.storyboard */,
 				069FA1D0236B04E10057BAD1 /* Info.plist */,
 			);
 			path = FaveoHelpdeskPro_Swift;
@@ -89,6 +86,8 @@
 		069FA1D8236B05C60057BAD1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				069FA1DF236B08230057BAD1 /* Login */,
+				069FA1E0236B082E0057BAD1 /* InboxViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -128,6 +127,8 @@
 		069FA1DD236B06480057BAD1 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				069FA1C8236B04B50057BAD1 /* Main.storyboard */,
+				069FA1CD236B04E10057BAD1 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -135,8 +136,23 @@
 		069FA1DE236B065F0057BAD1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				069FA1CB236B04E10057BAD1 /* Assets.xcassets */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		069FA1DF236B08230057BAD1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		069FA1E0236B082E0057BAD1 /* InboxViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = InboxViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
