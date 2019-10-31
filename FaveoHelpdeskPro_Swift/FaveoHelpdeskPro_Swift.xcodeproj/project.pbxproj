@@ -56,8 +56,13 @@
 		069FA1C1236B04B50057BAD1 /* FaveoHelpdeskPro_Swift */ = {
 			isa = PBXGroup;
 			children = (
-				069FA1C2236B04B50057BAD1 /* AppDelegate.swift */,
-				069FA1C4236B04B50057BAD1 /* SceneDelegate.swift */,
+				069FA1DC236B060F0057BAD1 /* AppDelegates */,
+				069FA1DB236B06020057BAD1 /* WebServices */,
+				069FA1D7236B05AC0057BAD1 /* Modal */,
+				069FA1D8236B05C60057BAD1 /* Controllers */,
+				069FA1D6236B05A30057BAD1 /* Views */,
+				069FA1D9236B05E10057BAD1 /* Resources */,
+				069FA1DA236B05F80057BAD1 /* Libraries */,
 				069FA1C6236B04B50057BAD1 /* ViewController.swift */,
 				069FA1C8236B04B50057BAD1 /* Main.storyboard */,
 				069FA1CB236B04E10057BAD1 /* Assets.xcassets */,
@@ -65,6 +70,73 @@
 				069FA1D0236B04E10057BAD1 /* Info.plist */,
 			);
 			path = FaveoHelpdeskPro_Swift;
+			sourceTree = "<group>";
+		};
+		069FA1D6236B05A30057BAD1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		069FA1D7236B05AC0057BAD1 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		069FA1D8236B05C60057BAD1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		069FA1D9236B05E10057BAD1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				069FA1DD236B06480057BAD1 /* Storyboard */,
+				069FA1DE236B065F0057BAD1 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		069FA1DA236B05F80057BAD1 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		069FA1DB236B06020057BAD1 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		069FA1DC236B060F0057BAD1 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				069FA1C2236B04B50057BAD1 /* AppDelegate.swift */,
+				069FA1C4236B04B50057BAD1 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		069FA1DD236B06480057BAD1 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		069FA1DE236B065F0057BAD1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
