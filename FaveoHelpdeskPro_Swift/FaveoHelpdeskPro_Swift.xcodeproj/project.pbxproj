@@ -13,6 +13,7 @@
 		069FA1CA236B04B50057BAD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069FA1C8236B04B50057BAD1 /* Main.storyboard */; };
 		069FA1CC236B04E10057BAD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 069FA1CB236B04E10057BAD1 /* Assets.xcassets */; };
 		069FA1CF236B04E10057BAD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069FA1CD236B04E10057BAD1 /* LaunchScreen.storyboard */; };
+		9DC4FF9F02A25B807520C771 /* Pods_FaveoHelpdeskPro_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78D7FEAA501B13AD7BB8827 /* Pods_FaveoHelpdeskPro_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		069FA1CB236B04E10057BAD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		069FA1CE236B04E10057BAD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		069FA1D0236B04E10057BAD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A4761A134BF2BAD59A90B77 /* Pods-FaveoHelpdeskPro_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaveoHelpdeskPro_Swift.release.xcconfig"; path = "Target Support Files/Pods-FaveoHelpdeskPro_Swift/Pods-FaveoHelpdeskPro_Swift.release.xcconfig"; sourceTree = "<group>"; };
+		C10C993AA0740565531E2D9F /* Pods-FaveoHelpdeskPro_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaveoHelpdeskPro_Swift.debug.xcconfig"; path = "Target Support Files/Pods-FaveoHelpdeskPro_Swift/Pods-FaveoHelpdeskPro_Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		F78D7FEAA501B13AD7BB8827 /* Pods_FaveoHelpdeskPro_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaveoHelpdeskPro_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC4FF9F02A25B807520C771 /* Pods_FaveoHelpdeskPro_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				069FA1C1236B04B50057BAD1 /* FaveoHelpdeskPro_Swift */,
 				069FA1C0236B04B50057BAD1 /* Products */,
+				10FE5CA60E40CC398BD51591 /* Pods */,
+				FFB59A249391CAFC850C6F4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +162,24 @@
 			path = InboxViewController;
 			sourceTree = "<group>";
 		};
+		10FE5CA60E40CC398BD51591 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C10C993AA0740565531E2D9F /* Pods-FaveoHelpdeskPro_Swift.debug.xcconfig */,
+				2A4761A134BF2BAD59A90B77 /* Pods-FaveoHelpdeskPro_Swift.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FFB59A249391CAFC850C6F4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F78D7FEAA501B13AD7BB8827 /* Pods_FaveoHelpdeskPro_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 069FA1D3236B04E10057BAD1 /* Build configuration list for PBXNativeTarget "FaveoHelpdeskPro_Swift" */;
 			buildPhases = (
+				C2A30A48A8F3B5961F87D3C5 /* [CP] Check Pods Manifest.lock */,
 				069FA1BB236B04B50057BAD1 /* Sources */,
 				069FA1BC236B04B50057BAD1 /* Frameworks */,
 				069FA1BD236B04B50057BAD1 /* Resources */,
+				8AC4EB24DE54D809621423A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +247,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8AC4EB24DE54D809621423A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaveoHelpdeskPro_Swift/Pods-FaveoHelpdeskPro_Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaveoHelpdeskPro_Swift/Pods-FaveoHelpdeskPro_Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FaveoHelpdeskPro_Swift/Pods-FaveoHelpdeskPro_Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2A30A48A8F3B5961F87D3C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaveoHelpdeskPro_Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		069FA1BB236B04B50057BAD1 /* Sources */ = {
@@ -370,6 +439,7 @@
 		};
 		069FA1D4236B04E10057BAD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C10C993AA0740565531E2D9F /* Pods-FaveoHelpdeskPro_Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -388,6 +458,7 @@
 		};
 		069FA1D5236B04E10057BAD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A4761A134BF2BAD59A90B77 /* Pods-FaveoHelpdeskPro_Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
