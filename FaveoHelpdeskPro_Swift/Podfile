@@ -7,5 +7,6 @@ target 'FaveoHelpdeskPro_Swift' do
 
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'SVProgressHUD'
   
 end
