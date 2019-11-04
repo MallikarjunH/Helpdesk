@@ -9,7 +9,6 @@
 #import "LoginViewController.h"
 #import "Utils.h"
 #import "Reachability.h"
-#import "MyWebservices.h"
 
 
 @interface LoginViewController () <UITextFieldDelegate>
@@ -93,12 +92,41 @@
                        
                    }
                    
-                   NSString *replyStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-                   
-                   NSLog(@"Login Response is : %@",replyStr);
+                 //  NSString *replyStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+                  // NSLog(@"Login Response is : %@",replyStr);
                    
                    NSDictionary *jsonData=[NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
                    NSLog(@"JSON is : %@",jsonData);
+                   
+                   if ([jsonData objectForKey:@"success"] == 0) {
+                       
+                       NSString * message = [jsonData objectForKey:@"message"];
+                       
+                       if([message isEqualToString:@"Invalid credentials"]){
+                           
+                           [self->utils showAlertWithMessage:@"Invalid Crendentials" sendViewController:self];
+                       }
+                       else if([message isEqualToString:@"API key is required"]){
+                           
+                            [self->utils showAlertWithMessage:@"API key is required. Please enable from the admin panel." sendViewController:self];
+                           
+                       }else{
+                           
+                           [self->utils showAlertWithMessage:@"Something went wrong" sendViewController:self];
+                       }
+                       
+                   }else  {
+                       
+                       NSDictionary *dataDict = [jsonData objectForKey:@"data"];
+                       NSDictionary *userDict = [dataDict objectForKey:@"user"];
+                       NSString *firstName = [userDict objectForKey:@"first_name"];
+                       NSString *lastName = [userDict objectForKey:@"last_name"];
+                       NSString *email = [userDict objectForKey:@"email"];
+                       NSString *profilePic = [userDict objectForKey:@"profile_pic"];
+                       NSString *userRole = [userDict objectForKey:@"role"];
+                       
+                   }
+
         
          }] resume];
             

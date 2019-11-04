@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		060BA89A23606FDE00349709 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 060BA89923606FDE00349709 /* LoginViewController.m */; };
 		060BA89C236072A600349709 /* helpdeskLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 060BA89B236072A600349709 /* helpdeskLogo.png */; };
 		060BA89E236074FB00349709 /* main_helpdesk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 060BA89D236074FB00349709 /* main_helpdesk.jpg */; };
+		06D713D523703A6F000AEFF1 /* InboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D713D423703A6F000AEFF1 /* InboxViewController.m */; };
 		06DB84552361B85B00271D1D /* MyWebservices.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DB84542361B85B00271D1D /* MyWebservices.m */; };
 		06DB84582361BA0A00271D1D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DB84572361BA0A00271D1D /* Reachability.m */; };
 		06DB845C2361BAFF00271D1D /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DB845B2361BAFF00271D1D /* Utils.m */; };
@@ -40,6 +41,8 @@
 		060BA89923606FDE00349709 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		060BA89B236072A600349709 /* helpdeskLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helpdeskLogo.png; sourceTree = "<group>"; };
 		060BA89D236074FB00349709 /* main_helpdesk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = main_helpdesk.jpg; sourceTree = "<group>"; };
+		06D713D323703A6F000AEFF1 /* InboxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InboxViewController.h; sourceTree = "<group>"; };
+		06D713D423703A6F000AEFF1 /* InboxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InboxViewController.m; sourceTree = "<group>"; };
 		06DB84512361A8A900271D1D /* AppConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
 		06DB84532361B85B00271D1D /* MyWebservices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWebservices.h; sourceTree = "<group>"; };
 		06DB84542361B85B00271D1D /* MyWebservices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWebservices.m; sourceTree = "<group>"; };
@@ -120,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				060BA89723606FC000349709 /* Login */,
+				06D713D223703A3A000AEFF1 /* Tickets */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -181,6 +185,15 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		06D713D223703A3A000AEFF1 /* Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				06D713D323703A6F000AEFF1 /* InboxViewController.h */,
+				06D713D423703A6F000AEFF1 /* InboxViewController.m */,
+			);
+			path = Tickets;
+			sourceTree = "<group>";
+		};
 		06DB84522361B81F00271D1D /* WebServices */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +226,6 @@
 				41FC16BB3BBE926C1165E54B /* Pods-FaveoHelpdeskPro_ObjC.debug.xcconfig */,
 				72918FCFA6BF6968454C8066 /* Pods-FaveoHelpdeskPro_ObjC.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -338,6 +350,7 @@
 				060BA88923606E3200349709 /* main.m in Sources */,
 				06DB845C2361BAFF00271D1D /* Utils.m in Sources */,
 				06DB84582361BA0A00271D1D /* Reachability.m in Sources */,
+				06D713D523703A6F000AEFF1 /* InboxViewController.m in Sources */,
 				060BA87B23606E1500349709 /* SceneDelegate.m in Sources */,
 				06DB84552361B85B00271D1D /* MyWebservices.m in Sources */,
 				060BA89A23606FDE00349709 /* LoginViewController.m in Sources */,
