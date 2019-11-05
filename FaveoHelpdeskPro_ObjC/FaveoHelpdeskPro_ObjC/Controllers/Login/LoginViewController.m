@@ -10,6 +10,7 @@
 #import "Utils.h"
 #import "Reachability.h"
 #import "GlobalVariables.h"
+#import "InboxViewController.h"
 
 @interface LoginViewController () <UITextFieldDelegate>
 {
@@ -137,7 +138,10 @@
                        self->globalVariables.loggedUserUserRole = userRole;
                        self->globalVariables.loggedUserUserProfilePic = profilePic;
                        
-                       //move to inbox VC
+                       //move to inbox VC InboxViewController
+                       InboxViewController *inboxVC = [self.storyboard instantiateViewControllerWithIdentifier:@"InboxViewControllerId"];
+                       [self.navigationController pushViewController:inboxVC animated:true];
+                       
                    }
 
         

@@ -19,6 +19,8 @@
 		060BA89E236074FB00349709 /* main_helpdesk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 060BA89D236074FB00349709 /* main_helpdesk.jpg */; };
 		06D713D523703A6F000AEFF1 /* InboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D713D423703A6F000AEFF1 /* InboxViewController.m */; };
 		06D713D8237173A2000AEFF1 /* GlobalVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D713D7237173A2000AEFF1 /* GlobalVariables.m */; };
+		06D713DF23719B8B000AEFF1 /* TicketStructureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06D713DD23719B8B000AEFF1 /* TicketStructureCell.xib */; };
+		06D713E22371A41B000AEFF1 /* TicketStructureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D713E12371A41B000AEFF1 /* TicketStructureCell.m */; };
 		06DB84552361B85B00271D1D /* MyWebservices.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DB84542361B85B00271D1D /* MyWebservices.m */; };
 		06DB84582361BA0A00271D1D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DB84572361BA0A00271D1D /* Reachability.m */; };
 		06DB845C2361BAFF00271D1D /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DB845B2361BAFF00271D1D /* Utils.m */; };
@@ -46,6 +48,9 @@
 		06D713D423703A6F000AEFF1 /* InboxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InboxViewController.m; sourceTree = "<group>"; };
 		06D713D6237173A2000AEFF1 /* GlobalVariables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalVariables.h; sourceTree = "<group>"; };
 		06D713D7237173A2000AEFF1 /* GlobalVariables.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalVariables.m; sourceTree = "<group>"; };
+		06D713DD23719B8B000AEFF1 /* TicketStructureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketStructureCell.xib; sourceTree = "<group>"; };
+		06D713E02371A41B000AEFF1 /* TicketStructureCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TicketStructureCell.h; sourceTree = "<group>"; };
+		06D713E12371A41B000AEFF1 /* TicketStructureCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketStructureCell.m; sourceTree = "<group>"; };
 		06DB84512361A8A900271D1D /* AppConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
 		06DB84532361B85B00271D1D /* MyWebservices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWebservices.h; sourceTree = "<group>"; };
 		06DB84542361B85B00271D1D /* MyWebservices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWebservices.m; sourceTree = "<group>"; };
@@ -120,6 +125,7 @@
 		060BA89023606EDC00349709 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				06D713D923719AFF000AEFF1 /* Xibs */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,6 +203,24 @@
 				06D713D423703A6F000AEFF1 /* InboxViewController.m */,
 			);
 			path = Tickets;
+			sourceTree = "<group>";
+		};
+		06D713D923719AFF000AEFF1 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				06D713DA23719B10000AEFF1 /* Ticket */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		06D713DA23719B10000AEFF1 /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				06D713E02371A41B000AEFF1 /* TicketStructureCell.h */,
+				06D713E12371A41B000AEFF1 /* TicketStructureCell.m */,
+				06D713DD23719B8B000AEFF1 /* TicketStructureCell.xib */,
+			);
+			path = Ticket;
 			sourceTree = "<group>";
 		};
 		06DB84522361B81F00271D1D /* WebServices */ = {
@@ -296,6 +320,7 @@
 				060BA89C236072A600349709 /* helpdeskLogo.png in Resources */,
 				060BA88623606E3200349709 /* LaunchScreen.storyboard in Resources */,
 				060BA89E236074FB00349709 /* main_helpdesk.jpg in Resources */,
+				06D713DF23719B8B000AEFF1 /* TicketStructureCell.xib in Resources */,
 				060BA88323606E3200349709 /* Assets.xcassets in Resources */,
 				060BA88123606E1500349709 /* Main.storyboard in Resources */,
 			);
@@ -359,6 +384,7 @@
 				060BA87B23606E1500349709 /* SceneDelegate.m in Sources */,
 				06DB84552361B85B00271D1D /* MyWebservices.m in Sources */,
 				06D713D8237173A2000AEFF1 /* GlobalVariables.m in Sources */,
+				06D713E22371A41B000AEFF1 /* TicketStructureCell.m in Sources */,
 				060BA89A23606FDE00349709 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

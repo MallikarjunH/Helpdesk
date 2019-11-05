@@ -119,6 +119,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rm6-kg-j0r">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="p60-Fu-edO" id="NEV-oM-P3n"/>
+                                    <outlet property="delegate" destination="p60-Fu-edO" id="vGb-T8-7kB"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -134,7 +138,10 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" image="equal" catalog="system" id="qXW-nU-Soa"/>
                         <rightBarButtonItems>
                             <barButtonItem title="Item" image="bell" catalog="system" id="kyq-TR-9Ld"/>
-                            <barButtonItem title="Item" image="pencil" catalog="system" id="fHL-3f-Ypv"/>
+                            <barButtonItem title="Item" image="magnifyingglass" catalog="system" id="fHL-3f-Ypv">
+                                <inset key="imageInsets" minX="17" minY="1" maxX="0.0" maxY="0.0"/>
+                                <inset key="largeContentSizeImageInsets" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -164,7 +171,7 @@
     <resources>
         <image name="bell" catalog="system" width="64" height="62"/>
         <image name="equal" catalog="system" width="64" height="36"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
         <image name="main_helpdesk.jpg" width="500" height="368"/>
-        <image name="pencil" catalog="system" width="64" height="56"/>
     </resources>
 </document>

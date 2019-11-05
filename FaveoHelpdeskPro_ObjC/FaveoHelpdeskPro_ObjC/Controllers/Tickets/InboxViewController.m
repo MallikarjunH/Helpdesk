@@ -7,8 +7,9 @@
 //
 
 #import "InboxViewController.h"
+#import "TicketStructureCell.h"
 
-@interface InboxViewController ()
+@interface InboxViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @end
 
@@ -19,14 +20,27 @@
     // Do any additional setup after loading the view.
 }
 
-/*
-#pragma mark - Navigation
+//MARK: TableView Data Source and Delegate Methods
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return 3;
 }
-*/
+- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    
+    TicketStructureCell * cell = [tableView dequeueReusableCellWithIdentifier:@"TicketStructureCellId"];
+    
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"TicketStructureCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    
+    return cell;
+}
+
+
+
+
 
 @end
