@@ -9,12 +9,13 @@
 #import "LoginViewController.h"
 #import "Utils.h"
 #import "Reachability.h"
-
+#import "GlobalVariables.h"
 
 @interface LoginViewController () <UITextFieldDelegate>
 {
     Utils *utils;
     NSUserDefaults *userdefaults;
+    GlobalVariables * globalVariables;
 }
 @end
 
@@ -24,6 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    globalVariables = [[GlobalVariables alloc] init];
+    utils = [[Utils alloc] init];
 }
 
 
@@ -118,6 +121,8 @@
                    }else  {
                        
                        NSDictionary *dataDict = [jsonData objectForKey:@"data"];
+                       NSString *userToken = [dataDict objectForKey:@"token"];
+                       
                        NSDictionary *userDict = [dataDict objectForKey:@"user"];
                        NSString *firstName = [userDict objectForKey:@"first_name"];
                        NSString *lastName = [userDict objectForKey:@"last_name"];
@@ -125,6 +130,14 @@
                        NSString *profilePic = [userDict objectForKey:@"profile_pic"];
                        NSString *userRole = [userDict objectForKey:@"role"];
                        
+                       self->globalVariables.loggedUserToken = userToken;
+                       self->globalVariables.loggedUserFirstName = firstName;
+                       self->globalVariables.loggedUserLastName = lastName;
+                       self->globalVariables.loggedUserUserEmail = email;
+                       self->globalVariables.loggedUserUserRole = userRole;
+                       self->globalVariables.loggedUserUserProfilePic = profilePic;
+                       
+                       //move to inbox VC
                    }
 
         
