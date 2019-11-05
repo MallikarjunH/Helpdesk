@@ -108,6 +108,41 @@
             </objects>
             <point key="canvasLocation" x="1050.7246376811595" y="115.84821428571428"/>
         </scene>
+        <!--Inbox-->
+        <scene sceneID="Bio-6E-jSk">
+            <objects>
+                <viewController storyboardIdentifier="InboxViewControllerId" title="Inbox" id="p60-Fu-edO" customClass="InboxViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pYa-AR-Ima">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rm6-kg-j0r">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rm6-kg-j0r" firstAttribute="trailing" secondItem="f9l-Ki-JDv" secondAttribute="trailing" id="ZxW-bl-a4D"/>
+                            <constraint firstItem="rm6-kg-j0r" firstAttribute="top" secondItem="f9l-Ki-JDv" secondAttribute="top" id="nUJ-Z6-b4k"/>
+                            <constraint firstItem="f9l-Ki-JDv" firstAttribute="bottom" secondItem="rm6-kg-j0r" secondAttribute="bottom" id="nb8-t8-WWJ"/>
+                            <constraint firstItem="rm6-kg-j0r" firstAttribute="leading" secondItem="f9l-Ki-JDv" secondAttribute="leading" id="zpF-bV-CLu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f9l-Ki-JDv"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Inbox" id="n6g-M4-ip0">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="equal" catalog="system" id="qXW-nU-Soa"/>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="bell" catalog="system" id="kyq-TR-9Ld"/>
+                            <barButtonItem title="Item" image="pencil" catalog="system" id="fHL-3f-Ypv"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KI0-yy-aIo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2039.1304347826087" y="115.84821428571428"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="7qw-rg-Nv7">
             <objects>
@@ -127,6 +162,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bell" catalog="system" width="64" height="62"/>
+        <image name="equal" catalog="system" width="64" height="36"/>
         <image name="main_helpdesk.jpg" width="500" height="368"/>
+        <image name="pencil" catalog="system" width="64" height="56"/>
     </resources>
 </document>
