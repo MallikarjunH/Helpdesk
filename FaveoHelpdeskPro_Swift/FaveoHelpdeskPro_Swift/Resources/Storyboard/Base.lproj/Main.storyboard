@@ -2,15 +2,16 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="sqf-6q-FaD">
             <objects>
-                <viewController id="UPX-fD-TCh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewControllerId" id="UPX-fD-TCh" customClass="LoginViewController" customModule="FaveoHelpdeskPro_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KEr-z3-Tcs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,6 +23,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="UPX-fD-TCh" id="3iK-PK-z59"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="********" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S2a-M4-Ajw">
                                 <rect key="frame" x="28" y="444" width="360" height="34"/>
@@ -30,6 +34,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="UPX-fD-TCh" id="ncF-42-glR"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RN5-7h-5pi">
                                 <rect key="frame" x="28" y="510" width="360" height="35"/>
@@ -40,6 +47,9 @@
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="0.95294117649999999" green="0.95686274510000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="UPX-fD-TCh" eventType="touchUpInside" id="KXi-kN-2VT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXn-Sw-vIV">
                                 <rect key="frame" x="28" y="339" width="138" height="21"/>
@@ -90,6 +100,10 @@
                         <viewLayoutGuide key="safeArea" id="umu-s6-Rul"/>
                     </view>
                     <navigationItem key="navigationItem" id="WrS-Y6-P90"/>
+                    <connections>
+                        <outlet property="paswordTextField" destination="S2a-M4-Ajw" id="Lgd-UL-CaD"/>
+                        <outlet property="userNameTextField" destination="M9Q-en-FHp" id="gPF-mn-rg1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8G-3m-g3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

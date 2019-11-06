@@ -13,6 +13,9 @@
 		069FA1CA236B04B50057BAD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069FA1C8236B04B50057BAD1 /* Main.storyboard */; };
 		069FA1CC236B04E10057BAD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 069FA1CB236B04E10057BAD1 /* Assets.xcassets */; };
 		069FA1CF236B04E10057BAD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069FA1CD236B04E10057BAD1 /* LaunchScreen.storyboard */; };
+		06AD4C512372DCDE001579B8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AD4C502372DCDE001579B8 /* LoginViewController.swift */; };
+		06AD4C532372DDD9001579B8 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AD4C522372DDD9001579B8 /* WebServices.swift */; };
+		06AD4C552372DFEB001579B8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AD4C542372DFEB001579B8 /* Utils.swift */; };
 		06D713D02370295E000AEFF1 /* helpdeskLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D713CE2370295E000AEFF1 /* helpdeskLogo.png */; };
 		06D713D12370295E000AEFF1 /* main_helpdesk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06D713CF2370295E000AEFF1 /* main_helpdesk.jpg */; };
 		9DC4FF9F02A25B807520C771 /* Pods_FaveoHelpdeskPro_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78D7FEAA501B13AD7BB8827 /* Pods_FaveoHelpdeskPro_Swift.framework */; };
@@ -27,6 +30,9 @@
 		069FA1CB236B04E10057BAD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		069FA1CE236B04E10057BAD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		069FA1D0236B04E10057BAD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06AD4C502372DCDE001579B8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		06AD4C522372DDD9001579B8 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		06AD4C542372DFEB001579B8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		06D713CE2370295E000AEFF1 /* helpdeskLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helpdeskLogo.png; sourceTree = "<group>"; };
 		06D713CF2370295E000AEFF1 /* main_helpdesk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = main_helpdesk.jpg; sourceTree = "<group>"; };
 		2A4761A134BF2BAD59A90B77 /* Pods-FaveoHelpdeskPro_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaveoHelpdeskPro_Swift.release.xcconfig"; path = "Target Support Files/Pods-FaveoHelpdeskPro_Swift/Pods-FaveoHelpdeskPro_Swift.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +96,7 @@
 		069FA1D7236B05AC0057BAD1 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				06AD4C542372DFEB001579B8 /* Utils.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -122,6 +129,7 @@
 		069FA1DB236B06020057BAD1 /* WebServices */ = {
 			isa = PBXGroup;
 			children = (
+				06AD4C522372DDD9001579B8 /* WebServices.swift */,
 			);
 			path = WebServices;
 			sourceTree = "<group>";
@@ -157,6 +165,7 @@
 		069FA1DF236B08230057BAD1 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				06AD4C502372DCDE001579B8 /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -302,9 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06AD4C512372DCDE001579B8 /* LoginViewController.swift in Sources */,
+				06AD4C532372DDD9001579B8 /* WebServices.swift in Sources */,
 				069FA1C7236B04B50057BAD1 /* ViewController.swift in Sources */,
 				069FA1C3236B04B50057BAD1 /* AppDelegate.swift in Sources */,
 				069FA1C5236B04B50057BAD1 /* SceneDelegate.swift in Sources */,
+				06AD4C552372DFEB001579B8 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -434,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -459,7 +471,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "TestExamples.FaveoHelpdeskPro-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -478,7 +490,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "TestExamples.FaveoHelpdeskPro-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
