@@ -20,8 +20,8 @@ class Connectivity {
 
 class webConstant:NSObject
 {
-          static let baseURL = "https://www.stablehelpdesk.faveodemo.com"
-          static let authenticate = "authenticate"
+          static let baseURL = "https://www.stablehelpdesk.faveodemo.com/"
+          static let authenticate = "api/v1/authenticate"
 }
 
 

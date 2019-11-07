@@ -68,6 +68,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     func loginApiCallMethod(){
         
+        let url = webConstant.baseURL + webConstant.authenticate
+        
+        requestPOSTURL(url, params: ["username":userNameTextField.text as AnyObject, "password": paswordTextField.text as AnyObject], success: { (data) in
+            
+            print("JSON is: ",data)
+            
+            
+        }) { (error) in
+            
+            print("Err")
+        }
     }
     
 }

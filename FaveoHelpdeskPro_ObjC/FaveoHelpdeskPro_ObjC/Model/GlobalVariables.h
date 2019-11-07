@@ -10,6 +10,8 @@
 
 @interface GlobalVariables : NSObject
 
+@property (strong, nonatomic) NSString *userLoggedStatus;
+
 @property (strong, nonatomic) NSString *loggedUserToken;
 @property (strong, nonatomic) NSString *loggedUserFirstName;
 @property (strong, nonatomic) NSString *loggedUserLastName;
