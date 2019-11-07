@@ -174,8 +174,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="default_pic" width="16" height="16"/>
-        <image name="headfone" width="16" height="16"/>
-        <image name="owner" width="16" height="16"/>
+        <image name="default_pic" width="512" height="512"/>
+        <image name="headfone" width="512" height="512"/>
+        <image name="owner" width="512" height="512"/>
     </resources>
 </document>
