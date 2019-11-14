@@ -119,7 +119,7 @@ public func requestPOSTURL(_ strURL : String, params : [String : AnyObject]?, su
     }else{
         DispatchQueue.main.async {
             SVProgressHUD.dismiss()
-            let alert = UIAlertController(title: "Faveo Helpdesk", message: "Please,check your internet connection", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Your Helpdesk", message: "Please,check your internet connection", preferredStyle: .alert)
             let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alert.addAction(action)
             UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
@@ -152,7 +152,7 @@ public func requestGETURL(_ strURL: String, params : [String : AnyObject]?, succ
     }else{
         DispatchQueue.main.async {
             SVProgressHUD.dismiss()
-            let alert = UIAlertController(title: "Faveo Helpdesk", message: "Please check your internet connection", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Your Helpdesk", message: "Please check your internet connection", preferredStyle: .alert)
             let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alert.addAction(action)
             UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
@@ -190,7 +190,7 @@ public func requestGETURL(_ strURL: String, params : [String : AnyObject]?, succ
         }else{
             DispatchQueue.main.async {
                 SVProgressHUD.dismiss()
-                let alert = UIAlertController(title: "Faveo Helpdesk", message: "Please,check your internet connection", preferredStyle: .alert)
+                let alert = UIAlertController(title: "Your Helpdesk", message: "Please,check your internet connection", preferredStyle: .alert)
                 let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
                 alert.addAction(action)
                 UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)

@@ -20,8 +20,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
-        
         // to set black background color mask for Progress view
         SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
     }
@@ -43,30 +41,30 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
    
         SVProgressHUD.show(withStatus: "Please wait...")
         
-        
         if  userNameTextField.text == "" && paswordTextField.text == "" {
             
-            showAlert(title: "Faveo Helpdesk", message: "Please Enter Username & Password.", vc: self)
+            showAlert(title: "Your Helpdesk", message: "Please Enter Username & Password.", vc: self)
             SVProgressHUD.dismiss()
             
         }
         else if  userNameTextField.text == ""{
-            showAlert(title: "Faveo Helpdesk", message: "Please Enter Username.", vc: self)
+            showAlert(title: "Your Helpdesk", message: "Please Enter Username.", vc: self)
             SVProgressHUD.dismiss()
         }
         else if  paswordTextField.text == ""{
-            showAlert(title: "Faveo Helpdesk", message: "Please Enter Password.", vc: self)
+            showAlert(title: "Your Helpdesk", message: "Please Enter Password.", vc: self)
             SVProgressHUD.dismiss()
         }
         else{
             
             SVProgressHUD.show(withStatus: "Validating Account")
-            loginApiCallMethod()
+            loginApiCallMethodSimple()
+           // loginApiCallMethodWithModel()
         }
             
     }
     
-    func loginApiCallMethod(){
+    func loginApiCallMethodSimple(){
         
         let url = webConstant.baseURL + webConstant.authenticate
         
@@ -77,7 +75,22 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             
         }) { (error) in
             
-            print("Err")
+            print("Error: \(error.localizedDescription)")
+        }
+    }
+    
+    func loginApiCallMethodWithModel(){
+        
+        let url = webConstant.baseURL + webConstant.authenticate
+        
+        requestPOSTURL(url, params: ["username":userNameTextField.text as AnyObject, "password": paswordTextField.text as AnyObject], success: { (data) in
+            
+            print("JSON is: ",data)
+            
+            
+        }) { (error) in
+            
+            print("Error: \(error.localizedDescription)")
         }
     }
     

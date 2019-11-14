@@ -16,6 +16,8 @@
 		06AD4C512372DCDE001579B8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AD4C502372DCDE001579B8 /* LoginViewController.swift */; };
 		06AD4C532372DDD9001579B8 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AD4C522372DDD9001579B8 /* WebServices.swift */; };
 		06AD4C552372DFEB001579B8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AD4C542372DFEB001579B8 /* Utils.swift */; };
+		06D0E5AD237A66CF00989C6E /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0E5AC237A66CF00989C6E /* InboxViewController.swift */; };
+		06D0E5AF237A66FB00989C6E /* TicketDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0E5AE237A66FB00989C6E /* TicketDetailsVC.swift */; };
 		06D713D02370295E000AEFF1 /* helpdeskLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D713CE2370295E000AEFF1 /* helpdeskLogo.png */; };
 		06D713D12370295E000AEFF1 /* main_helpdesk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06D713CF2370295E000AEFF1 /* main_helpdesk.jpg */; };
 		9DC4FF9F02A25B807520C771 /* Pods_FaveoHelpdeskPro_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78D7FEAA501B13AD7BB8827 /* Pods_FaveoHelpdeskPro_Swift.framework */; };
@@ -33,6 +35,8 @@
 		06AD4C502372DCDE001579B8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		06AD4C522372DDD9001579B8 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 		06AD4C542372DFEB001579B8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		06D0E5AC237A66CF00989C6E /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		06D0E5AE237A66FB00989C6E /* TicketDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailsVC.swift; sourceTree = "<group>"; };
 		06D713CE2370295E000AEFF1 /* helpdeskLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = helpdeskLogo.png; sourceTree = "<group>"; };
 		06D713CF2370295E000AEFF1 /* main_helpdesk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = main_helpdesk.jpg; sourceTree = "<group>"; };
 		2A4761A134BF2BAD59A90B77 /* Pods-FaveoHelpdeskPro_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaveoHelpdeskPro_Swift.release.xcconfig"; path = "Target Support Files/Pods-FaveoHelpdeskPro_Swift/Pods-FaveoHelpdeskPro_Swift.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				069FA1DF236B08230057BAD1 /* Login */,
-				069FA1E0236B082E0057BAD1 /* InboxViewController */,
+				069FA1E0236B082E0057BAD1 /* TicketsAndDetails */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -170,11 +174,13 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		069FA1E0236B082E0057BAD1 /* InboxViewController */ = {
+		069FA1E0236B082E0057BAD1 /* TicketsAndDetails */ = {
 			isa = PBXGroup;
 			children = (
+				06D0E5AC237A66CF00989C6E /* InboxViewController.swift */,
+				06D0E5AE237A66FB00989C6E /* TicketDetailsVC.swift */,
 			);
-			path = InboxViewController;
+			path = TicketsAndDetails;
 			sourceTree = "<group>";
 		};
 		10FE5CA60E40CC398BD51591 /* Pods */ = {
@@ -311,8 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06D0E5AD237A66CF00989C6E /* InboxViewController.swift in Sources */,
 				06AD4C512372DCDE001579B8 /* LoginViewController.swift in Sources */,
 				06AD4C532372DDD9001579B8 /* WebServices.swift in Sources */,
+				06D0E5AF237A66FB00989C6E /* TicketDetailsVC.swift in Sources */,
 				069FA1C7236B04B50057BAD1 /* ViewController.swift in Sources */,
 				069FA1C3236B04B50057BAD1 /* AppDelegate.swift in Sources */,
 				069FA1C5236B04B50057BAD1 /* SceneDelegate.swift in Sources */,
@@ -392,7 +400,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -446,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
